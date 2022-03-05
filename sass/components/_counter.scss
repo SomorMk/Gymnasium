@@ -1,0 +1,53 @@
+@import '../mixins/mixins';
+@import '../variables/variable';
+
+/*===========================================================
+                     Membaership css start
+===========================================================*/
+#counter {
+    padding: 35px 0;
+    position: relative;
+    z-index: 1;
+
+    &::after {
+        position: absolute;
+        content: '';
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background: rgba(0, 0, 0, 0.9);
+        z-index: -1;
+    }
+
+    .counter_body{
+        ul{
+            li{
+                text-align: center;
+                h5{
+                    color: #fff;
+                    font-size: 40px;
+                    font-weight: 700;
+                    font-family: $osw;
+                }
+                p{
+                    color: #fff;
+                    font-size: 16px;
+                    font-weight: 400;
+                    font-family: $osw;
+                }
+                .pera{
+                    color: #fff;
+                }
+            }
+        }
+    }
+
+    ul {
+        justify-content: space-between;
+    }
+}
+
+/*===========================================================
+                     Membaership css end
+===========================================================*/

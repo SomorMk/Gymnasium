@@ -1,0 +1,50 @@
+@font-face {
+    font-family: "flaticon";
+    src: url("./flaticon.ttf?9fc09830f33b475690a46ed6f3df5fed") format("truetype"),
+url("./flaticon.woff?9fc09830f33b475690a46ed6f3df5fed") format("woff"),
+url("./flaticon.woff2?9fc09830f33b475690a46ed6f3df5fed") format("woff2"),
+url("./flaticon.eot?9fc09830f33b475690a46ed6f3df5fed#iefix") format("embedded-opentype"),
+url("./flaticon.svg?9fc09830f33b475690a46ed6f3df5fed#flaticon") format("svg");
+}
+
+i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
+    font-family: flaticon !important;
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.flaticon-weightlift:before {
+    content: "\f101";
+}
+.flaticon-strongman:before {
+    content: "\f102";
+}
+.flaticon-exercise:before {
+    content: "\f103";
+}
+.flaticon-fitness:before {
+    content: "\f104";
+}
+.flaticon-weightlifting:before {
+    content: "\f105";
+}
+.flaticon-boxing-fighter:before {
+    content: "\f106";
+}
+.flaticon-skipping-rope:before {
+    content: "\f107";
+}
+.flaticon-buddhist-yoga-pose:before {
+    content: "\f108";
+}
+.flaticon-cycling:before {
+    content: "\f109";
+}
+.flaticon-yoga:before {
+    content: "\f10a";
+}

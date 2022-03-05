@@ -1,0 +1,107 @@
+@import '../mixins/mixins';
+@import '../variables/variable';
+
+/*===========================================================
+                     Testimonial css start
+===========================================================*/
+#testimonial {
+    .main_testimonial_section {
+        margin-top: 30px;
+        padding: 30px 0 80px;
+        position: relative;
+        z-index: 1;
+
+        .test_slider {position: relative;
+
+            .slick-dots {
+                display: flex;
+                position: absolute;
+                bottom: -60px;
+                left: 50%;
+                transform: translateX(-50%);
+
+                li {
+                    margin-right: 10px;
+
+                    &.slick-active {
+                        button {
+                            width: 20px;
+                            height: 20px;
+                            background: $hover;
+                            border-radius: 50%;
+                            border-color: $hover;
+                        }
+                    }
+
+                    button {
+                        font-size: 0;
+                        border: none;
+                        width: 15px;
+                        height: 15px;
+                        border-radius: 50%;
+                        border: 2px solid #f6f6f6;
+                        background: transparent;
+                    }
+                }
+            }
+
+            .test_cont {
+                .test_img {
+                    display: flex;
+
+                    .test_img_text {
+                        margin-left: 12px;
+
+                        h5 {
+                            color: #fff;
+                            font-size: 14px;
+                            font-weight: 400;
+                            font-family: $osw;
+                            text-transform: uppercase;
+                            margin-bottom: 5px;
+                        }
+
+                        h6 {
+                            color: #fff;
+                            font-size: 14px;
+                            font-weight: 400;
+                            font-family: $osw;
+                            margin-bottom: 5px;
+                        }
+
+                        i {
+                            color: $hover;
+                            font-size: 14px;
+                        }
+                    }
+                }
+
+                .test_text {
+                    p {
+                        color: #ddd;
+                        font-size: 14px;
+                        font-weight: 400;
+                        font-family: $open;
+                        line-height: 18px;
+                        margin-top: 10px;
+                    }
+                }
+            }
+        }
+
+        &:after {
+            position: absolute;
+            content: '';
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.8);
+            z-index: -1;
+        }
+    }
+}
+
+/*===========================================================
+                     Testimonial css end
+===========================================================*/

@@ -1,0 +1,106 @@
+@import '../mixins/mixins';
+@import '../variables/variable';
+
+/*===========================================================
+                     Menu css start
+===========================================================*/
+.main_menu {
+    position: absolute;
+    top: 30px;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    background: rgba(53, 53, 53, 0.25);
+    z-index: 999;
+    transition: all linear .5s;
+
+    .navbar-brand {
+        width: 245px;
+        height: 70px;
+        background: #323232;
+        line-height: 70px;
+        text-align: center;
+        transform: skewX(-30deg);
+        border-left: 5px solid #020202;
+        border-right: 5px solid #020202;
+        transition: all linear .5s;
+
+        img {
+            transform: skewX(30deg);
+        }
+    }
+
+    ul {
+        li {
+            a {
+                padding: 0 10px !important;
+                line-height: 50px;
+                color: #fff;
+                font-size: 14px;
+                font-weight: 400;
+                font-family: $osw;
+                position: relative;
+                transition: all linear .5s;
+
+                &:after {
+                    position: absolute;
+                    content: '';
+                    left: 0;
+                    bottom: 0;
+                    width: 0;
+                    height: 3px;
+                    background: $hover;
+                    transition: all linear .5s;
+                }
+
+                &:hover {
+                    color: #222;
+                    background: #fff;
+
+                    &:after {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.menu_fix {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    z-index: 999;
+    transition: all linear .5s;
+    background: #000;
+
+    .navbar-brand {
+        background: transparent;
+        border: none;
+        transition: all linear .5s;
+        line-height: 64px;
+
+        img {
+            max-width: 50%;
+        }
+    }
+
+    ul {
+        li {
+            a {
+                line-height: 50px;
+                transition: all linear .5s;
+                &:hover{
+                    color: #000;
+                    background: #fff;
+                }
+            }
+        }
+    }
+}
+
+/*===========================================================
+                     Menu css end
+===========================================================*/

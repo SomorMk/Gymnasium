@@ -1,0 +1,66 @@
+@import '../mixins/mixins';
+@import '../variables/variable';
+
+/*===========================================================
+                     Cliant css start
+===========================================================*/
+#cliant {
+    padding: 5px 0 80px;
+    .cliant_slider {
+        position: relative;
+
+        .cliant_item {
+            a{
+                img {
+                    width: 100%;
+                    max-width: 100%;
+                }
+            }
+        }
+
+        .slick-slide {
+            padding: 0 12px;
+        }
+
+        .slick-center a{
+            box-shadow: 0 0 5px 0 #000;
+        }
+
+        .draggable{
+            padding: 10px 0 !important;
+        }
+
+        .prev_ar {
+            color: #444;
+            font-size: 30px;
+            position: absolute;
+            top: 50%;
+            left: -15px;
+            transform: translateY(-50%);
+            z-index: 2;
+            transition: all linear .2s;
+            &:hover{
+                color: $hover;
+            }
+        }
+        .next_ar {
+            color: #444;
+            font-size: 30px;
+            width: 30px;
+            height: 30px;
+            position: absolute;
+            top: 50%;
+            right: -30px;
+            transform: translateY(-50%);
+            z-index: 2;
+            transition: all linear .2s;
+            &:hover{
+                color: $hover;
+            }
+        }
+    }
+}
+
+/*===========================================================
+                     Cliant css end
+===========================================================*/

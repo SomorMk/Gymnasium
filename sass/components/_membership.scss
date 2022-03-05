@@ -1,0 +1,105 @@
+@import '../mixins/mixins';
+@import '../variables/variable';
+
+/*===========================================================
+                     Membaership css start
+===========================================================*/
+#membership {
+    padding: 80px 0;
+
+    .main_member_section {
+        padding-top: 30px;
+
+        .member_text {
+            margin-right: 10px;
+
+            &:nth-child(3) {
+                margin-right: 0;
+            }
+
+            h4 {
+                padding: 20px 0;
+                background: #dddddd;
+                color: #222;
+                font-size: 16px;
+                font-weight: 700;
+                font-family: $osw;
+                transition: all linear .3s;
+            }
+
+            .pricing_text {
+                position: relative;
+                padding: 40px 0;
+                z-index: 1;
+
+                p {
+                    color: #fff;
+                    font-size: 50px;
+                    font-weight: 500;
+                    font-family: $osw;
+
+                    span {
+                        font-size: 29px;
+                    }
+                }
+
+                .mem_overlay {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    background: rgba(0, 0, 0, 0.8);
+                    z-index: -1;
+                }
+
+            }
+
+            ul {
+                background: #f1f1f1;
+                padding: 35px 0 35px;
+
+                li {
+                    margin-bottom: 15px;
+                    color: #444;
+                    font-size: 14px;
+                    font-weight: 400;
+                    font-family: $open;
+
+                    &:last-child {
+                        margin-bottom: 0;
+                    }
+                }
+            }
+
+            a {
+                padding: 10px 0;
+                background: #ddd;
+                display: block;
+
+                color: #222;
+                font-size: 16px;
+                font-weight: 400;
+                font-family: $osw;
+                transition: all linear .3s;
+                cursor: grab;
+            }
+
+            &:hover {
+                h4 {
+                    background: $hover;
+                    color: #fff;
+                }
+
+                a {
+                    background: $hover;
+                    color: #fff;
+                }
+            }
+        }
+    }
+}
+
+/*===========================================================
+                     Membaership css end
+===========================================================*/

@@ -1,0 +1,111 @@
+@import '../mixins/mixins';
+@import '../variables/variable';
+
+/*===========================================================
+                     Class css start
+===========================================================*/
+#class {
+    padding: 75px 0;
+
+    #pills-tab {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        background: #f1f1f1;
+        margin-top: 25px;
+
+        .nav-item {
+            button {
+                width: 100%;
+                color: #222;
+
+                &.active {
+                    color: #fff !important;
+                    background: $hover !important;
+                    border-radius: 0;
+                }
+            }
+
+            width: 16.668%;
+
+        }
+    }
+
+    .tab-content {
+        ul {
+            display: flex;
+            flex-wrap: wrap;
+            margin-top: 30px;
+
+            li {
+                width: 19.643%;
+                background: #f1f1f1;
+                padding: 45px 32px;
+                text-align: center;
+                transition:all linear .3s;
+
+                margin-right: 5px;
+
+                &:nth-child(5),
+                &:nth-child(10) {
+                    margin-right: 0;
+                }
+
+                margin-bottom: 5px;
+
+                &:nth-child(6),
+                &:nth-child(7),
+                &:nth-child(8),
+                &:nth-child(9),
+                &:nth-child(10) {
+                    margin-bottom: 0;
+                }
+
+                h5 {
+                    color: #222;
+                    font-size: 16px;
+                    font-weight: 400;
+                    font-family: $open;
+                    margin-bottom: 10px;
+                transition:all linear .3s;
+                }
+
+                i {
+                    color: #444;
+                    font-size: 50px;
+                    padding-top: 15px;
+                transition:all linear .3s;
+                }
+
+                p {
+                    color: #444;
+                    font-size: 14px;
+                    font-weight: 400;
+                    font-family: $open;
+                transition:all linear .3s;
+                }
+
+                &:hover {
+                    background: $hover;
+
+                    h5 {
+                        color: #fff;
+                    }
+
+                    i {
+                        color: #fff;
+                    }
+
+                    p {
+                        color: #fff;
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+/*===========================================================
+                     Class css end
+===========================================================*/
